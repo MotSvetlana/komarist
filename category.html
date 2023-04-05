@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poiret+One&display=swap"
+    rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Категорія</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class = "header" id = "header">
+            <div class="header__container">
+                <div class="header-wrapper" id = "header-wrapper">
+                    <a href = "index.html" class="header__logo">
+                        <img src="img/header/logo.png" alt="Логотип" class="header__logo-img">
+                    </a>
+                    <div class="header__burger">
+                        <span> Меню</span>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__nav-items">
+                            <li class="header__nav-item">
+                                <a href="about.html" class="header__nav-link">
+                                    Про нас
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="gallery.html" class="header__nav-link">
+                                    Галерея
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="contacts.html" class="header__nav-link">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__icons">
+                        <ul class="header__icons-items">
+                            <li class="header__icons-item">
+                                <a href="favorites.html" class="header__icons-link">
+                                    <img src="img/header/heart.svg" alt="" class="header__icons-linkimage">
+                                    <span class="header__icon-num">
+                                        4
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__icons-item">
+                                <a href="cart.html" class="header__icons-link">
+                                    <img src="img/header/cart.svg" alt="" class="header__icons-linkimage">
+                                <span class="header__icon-num">
+                                    2
+                                </span>
+                                </a>
+                            </li>
+                            <li class="header__icons-item">
+                                <a href="regisrtation.html" class="header__icons-link">
+                                    <img src="img/header/account.svg" alt="" class="header__icons-linkimage">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="submit" class ="header__btn btn">
+                        Замовити
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class = "category-page">
+            <section class="category-page__category category">
+                <div class="category__container">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__items-link">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="gallery.html" class="breadcrumbs__items-link">
+                                Галерея
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item active">
+                            <span class="breadcrumbs__items-link">
+                                Дитячі торти
+                            </span>
+                        </li>
+                    </ul>
+                    <h1 class="category__title main-title">
+                        Дитячі торти
+                    </h1>
+                    <p class="category__text">
+                        Фільтри
+                    </p>
+                    <div class="category__wrapper">
+                        <div class="category__filter">
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        Кількість ярусів
+                                    </span>
+                                    <button type="button" class = "category__arrow"></button>
+                                </div>
+                                <div class="category__selections active">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1"  class="input-selection"  >
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3"  class="input-selection"  >
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        Тварина
+                                    </span>
+                                    <button type="button" class="category__arrow"></button>
+                                </div>
+                                <div class="category__selections">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1" class="input-selection">
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3" class="input-selection">
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        Персонажі з ігр
+                                    </span>
+                                    <button type="button" class="category__arrow"></button>
+                                </div>
+                                <div class="category__selections">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1" class="input-selection">
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3" class="input-selection">
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        Колір
+                                    </span>
+                                    <button type="button" class="category__arrow"></button>
+                                </div>
+                                <div class="category__selections">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1" class="input-selection">
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3" class="input-selection">
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        З фігурками
+                                    </span>
+                                    <button type="button" class="category__arrow"></button>
+                                </div>
+                                <div class="category__selections">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1" class="input-selection">
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3" class="input-selection">
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        Для кого
+                                    </span>
+                                    <button type="button" class="category__arrow"></button>
+                                </div>
+                                <div class="category__selections">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1" class="input-selection">
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3" class="input-selection">
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        Свято
+                                    </span>
+                                    <button type="button" class="category__arrow"></button>
+                                </div>
+                                <div class="category__selections">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1" class="input-selection">
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3" class="input-selection">
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        З квітами
+                                    </span>
+                                    <button type="button" class="category__arrow"></button>
+                                </div>
+                                <div class="category__selections">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1" class="input-selection">
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3" class="input-selection">
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        Транспорт
+                                    </span>
+                                    <button type="button" class="category__arrow"></button>
+                                </div>
+                                <div class="category__selections">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1" class="input-selection">
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3" class="input-selection">
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        Доповнення
+                                    </span>
+                                    <button type="button" class="category__arrow"></button>
+                                </div>
+                                <div class="category__selections">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1" class="input-selection">
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3" class="input-selection">
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        Мультфільми
+                                    </span>
+                                    <button type="button" class="category__arrow"></button>
+                                </div>
+                                <div class="category__selections">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1" class="input-selection">
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3" class="input-selection">
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        Фільми
+                                    </span>
+                                    <button type="button" class="category__arrow"></button>
+                                </div>
+                                <div class="category__selections">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1" class="input-selection">
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3" class="input-selection">
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__filter-block">
+                                <div class="category__filter-wrap">
+                                    <span class="category__name">
+                                        Спорт
+                                    </span>
+                                    <button type="button" class="category__arrow"></button>
+                                </div>
+                                <div class="category__selections">
+                                    <div class="category__selection">
+                                        <input type="checkbox" name="checkbox1" id="opt1" class="input-selection">
+                                        1 ярус
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox2" class="input-selection" checked>
+                                        2 яруса
+                                    </div>
+                                    <div class="category__selection">
+                                        <input type=" checkbox" name="checkbox3" id="opt3" class="input-selection">
+                                        3 яруса
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class = "category__filter-button btn">Показати</button>
+                        </div>
+                        <div class="category__cards">
+                            <div class="category__card">
+                                <a href="#" class="category__card-item">
+                                    <img src="img/category/card1.jpg" alt="" class="category__card-img">
+                                </a>
+                                <div class="category__card-info">
+                                    <h1 class="category__card-name">
+                                        Дівчинка з повітряними кульками
+                                    </h1>
+                                    <div class="category__card-wrap">
+                                        <p class="category__card-price"> Від <span> 400 </span> грн </p>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/heart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/cart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__card">
+                                <a href="#" class="category__card-item">
+                                    <img src="img/category/card2.jpg" alt="" class="category__card-img">
+                                </a>
+                                <div class="category__card-info">
+                                    <h1 class="category__card-name">
+                                        Торт острів динозаврів
+                                    </h1>
+                                    <div class="category__card-wrap">
+                                        <p class="category__card-price"> Від <span> 450 </span> грн </p>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/heart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/cart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__card">
+                                <a href="#" class="category__card-item">
+                                    <img src="img/category/card3.jpg" alt="" class="category__card-img">
+                                </a>
+                                <div class="category__card-info">
+                                    <h1 class="category__card-name">
+                                        Торт Дональд Дак та злиток золота
+                                    </h1>
+                                    <div class="category__card-wrap">
+                                        <p class="category__card-price"> Від <span> 500 </span> грн </p>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/heart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/cart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__card">
+                                <a href="#" class="category__card-item">
+                                    <img src="img/category/card4.jpg" alt="" class="category__card-img">
+                                </a>
+                                <div class="category__card-info">
+                                    <h1 class="category__card-name">
+                                        Торт кролик з повітряними кульками
+                                    </h1>
+                                    <div class="category__card-wrap">
+                                        <p class="category__card-price"> Від <span> 400 </span> грн </p>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/heart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/cart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__card">
+                                <a href="#" class="category__card-item">
+                                    <img src="img/category/card5.jpg" alt="" class="category__card-img">
+                                </a>
+                                <div class="category__card-info">
+                                    <h1 class="category__card-name">
+                                        Торт з людиною павуком та халком
+                                    </h1>
+                                    <div class="category__card-wrap">
+                                        <p class="category__card-price"> Від <span> 550 </span> грн </p>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/heart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/cart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__card">
+                                <a href="#" class="category__card-item">
+                                    <img src="img/category/card6.jpg" alt="" class="category__card-img">
+                                </a>
+                                <div class="category__card-info">
+                                    <h1 class="category__card-name">
+                                        Святковий торт хмарки з місяцем
+                                    </h1>
+                                    <div class="category__card-wrap">
+                                        <p class="category__card-price"> Від <span> 400 </span> грн </p>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/heart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/cart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__card">
+                                <a href="#" class="category__card-item">
+                                    <img src="img/category/card7.jpg" alt="" class="category__card-img">
+                                </a>
+                                <div class="category__card-info">
+                                    <h1 class="category__card-name">
+                                        Торт ведмедик з квітами
+                                    </h1>
+                                    <div class="category__card-wrap">
+                                        <p class="category__card-price"> Від <span> 500 </span> грн </p>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/heart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/cart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__card">
+                                <a href="#" class="category__card-item">
+                                    <img src="img/category/card8.jpg" alt="" class="category__card-img">
+                                </a>
+                                <div class="category__card-info">
+                                    <h1 class="category__card-name">
+                                        Торт острів з динозавром
+                                    </h1>
+                                    <div class="category__card-wrap">
+                                        <p class="category__card-price"> Від <span> 600 </span> грн </p>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/heart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/cart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__card">
+                                <a href="#" class="category__card-item">
+                                    <img src="img/category/card9.jpg" alt="" class="category__card-img">
+                                </a>
+                                <div class="category__card-info">
+                                    <h1 class="category__card-name">
+                                        Двохярусний фруктовий торт
+                                    </h1>
+                                    <div class="category__card-wrap">
+                                        <p class="category__card-price"> Від <span> 800 </span> грн </p>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/heart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                        <a href="#" class="category__icon-link">
+                                            <img src="img/category/cart-light.svg" alt="" class="category__icon-image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__pages">
+                        <ul class="category__pages-btn">
+                            <li class="pages__btn active ">
+                                <span class="page__btn">
+                                    1
+                                </span>
+                            </li>
+                            <li class="pages__btn">
+                                <a href="#" class="pag__btn">
+                                    2
+                                </a>
+                            </li>
+                            <li class="pages__btn">
+                                <a href="#" class="pag__btn">
+                                    3
+                                </a>
+                            </li>
+                            <li class="pages-btn">
+                                <a href="#" class="page__btn-arrow">
+                                    <img src="img/category/chevron-right-gray.svg" alt="" class="page-arrow">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class = "footer">
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <div class="footer__navigation">
+                        <h6 class="footer__title">
+                            Навігація
+                        </h6>
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-items">
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Про нас
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Галерея
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Контакти
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__timeline">
+                        <h6 class="footer__title">
+                            Графік роботи
+                        </h6>
+                        <p class="footer__text">
+                            Працюємо з 9:00 - 18:00 з пн. по пт.
+                        </p>
+                        <p class="footer__text">
+                            сб. та вс. - вихідні
+                        </p>
+                    </div>
+                    <div class="footer__logo">
+                        <img src="img/footer/logo.png" alt="Логотип" class="footer__logo-img">
+                    </div>
+                    <div class="footer__social">
+                        <h6 class="footer__title">
+                            Слідкуй за нами:
+                        </h6>
+                        <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="footer__social-item">
+                            <img src="img/footer/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="footer__social-item">
+                            <img src="img/footer/instagram.svg" alt="Instagramm">
+                        </a>
+                    </div>
+                    <div class="footer__contacts">
+                        <h6 class="footer__title">
+                            Контакти
+                        </h6>
+                        <div class="footer__contacts-item">
+                            <a href="tel:+380958794356" class = "footer__contacts-link">
+                                <img src="img/footer/phone.svg" alt="Номер телефона" class="footer__contacts-icon">+38 (095) 879 43 56
+                            </a>
+                        </div>
+                        <div class="footer__contacts-item">
+                            <a href="mailto:info@tort.pl.ua" class = "footer__contacts-link">
+                                <img src="img/footer/email.svg" alt="Электронная почта" class="footer__contacts-icon">info@tort.pl.ua
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

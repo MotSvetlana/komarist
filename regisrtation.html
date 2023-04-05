@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poiret+One&display=swap"
+    rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Форма регістрації</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class = "header" id = "header">
+            <div class="header__container">
+                <div class="header-wrapper" id = "header-wrapper">
+                    <a href = "index.html" class="header__logo">
+                        <img src="img/header/logo.png" alt="Логотип" class="header__logo-img">
+                    </a>
+                    <div class="header__burger">
+                        <span> Меню</span>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__nav-items">
+                            <li class="header__nav-item">
+                                <a href="about.html" class="header__nav-link">
+                                    Про нас
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="gallery.html" class="header__nav-link">
+                                    Галерея
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="contacts.html" class="header__nav-link">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__icons">
+                        <ul class="header__icons-items">
+                            <li class="header__icons-item">
+                                <a href="favorites.html" class="header__icons-link">
+                                    <img src="img/header/heart.svg" alt="" class="header__icons-linkimage">
+                                    <span class="header__icon-num">
+                                        4
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__icons-item">
+                                <a href="cart.html" class="header__icons-link">
+                                    <img src="img/header/cart.svg" alt="" class="header__icons-linkimage">
+                                <span class="header__icon-num">
+                                    2
+                                </span>
+                                </a>
+                            </li>
+                            <li class="header__icons-item">
+                                <a href="regisrtation.html" class="header__icons-link">
+                                    <img src="img/header/account.svg" alt="" class="header__icons-linkimage">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="submit" class ="header__btn btn">
+                        Замовити
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="register-page">
+            <section class="register-page__register register">
+                <div class="register__container">
+                    <div class="register__wrap">
+                        <div class="register__login">
+                            <h3 class="register__title">
+                                Ви користувач?
+                            </h3>
+                            <a href="#" class="register__reg-btn btn-ghost">
+                                Увійдіть
+                            </a>
+                            <div class="login__modal" id="login__modal">
+                                <div class="login__modal-overlay" id="login__modal-overlay"></div>
+                                <div class="login__modal-window">
+                                    <button type="button" class="login__close" id="login__close">
+                                        <img src="img/registration/close_black.svg" alt="" class="close-img">
+                                    </button>
+                                    <h3 class="login__modal-title">
+                                        Ви користувач?
+                                    </h3>
+                                    <form action="#" class="register__login js-form" id="register__login">
+                                        <input type="email" class="register__login-input" name="email" placeholder="Ваш email" required>
+                                        <input type="password" class="register__login-input" name="password" placeholder="Пароль" required>
+                                        <div class="register__login-check">
+                                            <input type="checkbox" name="nameCheck" class="register__check" id="register__check" checked>
+                                            <label for="register__check" class="register__check-label">
+                                                Не виходити з системи
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="register__login-btn btn" data-submit="">
+                                            Увійти
+                                        </button>
+                                        <button type="button" class="register__login-help" >
+                                            Я забув (-ла) свій пароль
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="login__modal-window2" id = "login__modal-window2">
+                                    <button type="button" class="login__close" id="login__close2">
+                                        <img src="img/registration/close_black.svg" alt="" class="close-img">
+                                    </button>
+                                    <h3 class="login__modal-title">
+                                        Для відновлення паролю
+                                    </h3>
+                                    <form action="#" class="register__help js-form" id = "register__help">
+                                        <input type="email" class="register__help-input" name="email" placeholder="Ваш email" required>
+                                        <button type="submit" class = "register__help-btn btn" data-submit>
+                                            Відправити
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="register__reg">
+                            <h3 class="register__title">
+                                Це перший візит?
+                            </h3>
+                            <button type="button" class="register__regist-btn btn-ghost">
+                                Зареєструватись
+                            </button>
+                            <div class="reg__modal" id="reg__modal">
+                                <div class="reg__modal-overlay" id="reg__modal-overlay"></div>
+                                <div class="reg__modal-window">
+                                    <button type="button" class="register__close reg__close" id=" register__close">
+                                        <img src="img/registration/close_black.svg" alt="" class="close-img">
+                                    </button>
+                                    <h3 class="reg__modal-title">
+                                        Ваші данні
+                                    </h3>
+                                    <form action="#" class="register__reg js-form" id="register__reg">
+                                        <div class="reg-wrap">
+                                            <input type="text" class="register__reg-input" id = "reg-input__name" name="name" placeholder="Ваше ім’я" required>
+                                            <input type="tel" class="register__reg-input" id = "reg-input__tel" name="tel" placeholder="Ваш телефон" required>
+                                        </div>
+                                        <input type="email" class="register__reg-input" name="email" placeholder="Ваш email" required>
+                                        <input type="password" class="register__reg-input" name="password" placeholder="Пароль" required>
+                                        <input type="password" class="register__reg-input" name="password" placeholder="Пароль ще раз" required>
+                            
+                                        <div class="register__reg-check">
+                                            <input type="checkbox" name="nameCheck" class="register__check" id="register__check" >
+                                            <label for="register__check" class="register__check-label">
+                                                Я хочу отримувати ел.пошту з новинами і повідомленнями про акції.
+                                            </label>
+                                        </div>
+                                        <div class="register__reg-check">
+                                            <input type="checkbox" name="nameCheck" class="register__check" id="register__check" checked>
+                                            <label for="register__check" class="register__check-label">
+                                                Реєструючись, ви погоджуєтесь з політикою конфіденційності
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="register__reg-btn btn" data-submit>
+                                            Зареєструватись
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <div class="footer__navigation">
+                        <h6 class="footer__title">
+                            Навігація
+                        </h6>
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-items">
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Про нас
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Галерея
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Контакти
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__timeline">
+                        <h6 class="footer__title">
+                            Графік роботи
+                        </h6>
+                        <p class="footer__text">
+                            Працюємо з 9:00 - 18:00 з пн. по пт.
+                        </p>
+                        <p class="footer__text">
+                            сб. та вс. - вихідні
+                        </p>
+                    </div>
+                    <div class="footer__logo">
+                        <img src="img/footer/logo.png" alt="Логотип" class="footer__logo-img">
+                    </div>
+                    <div class="footer__social">
+                        <h6 class="footer__title">
+                            Слідкуй за нами:
+                        </h6>
+                        <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="footer__social-item">
+                            <img src="img/footer/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="footer__social-item">
+                            <img src="img/footer/instagram.svg" alt="Instagramm">
+                        </a>
+                    </div>
+                    <div class="footer__contacts">
+                        <h6 class="footer__title">
+                            Контакти
+                        </h6>
+                        <div class="footer__contacts-item">
+                            <a href="tel:+380958794356" class = "footer__contacts-link">
+                                <img src="img/footer/phone.svg" alt="Номер телефона" class="footer__contacts-icon">+38 (095) 879 43 56
+                            </a>
+                        </div>
+                        <div class="footer__contacts-item">
+                            <a href="mailto:info@tort.pl.ua" class = "footer__contacts-link">
+                                <img src="img/footer/email.svg" alt="Электронная почта" class="footer__contacts-icon">info@tort.pl.ua
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/registration.js"></script>
+
+</body>
+
+</html>

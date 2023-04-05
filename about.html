@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poiret+One&display=swap"
+    rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Про нас</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class = "header " id = "header">
+            <div class="header__container">
+                <div class="header-wrapper" id = "header-wrapper">
+                    <a href = "index.html" class="header__logo">
+                        <img src="img/header/logo.png" alt="Логотип" class="header__logo-img">
+                    </a>
+                    <div class="header__burger">
+                        <span> Меню</span>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__nav-items">
+                            <li class="header__nav-item">
+                                <a href="about.html" class="header__nav-link">
+                                    Про нас
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="gallery.html" class="header__nav-link">
+                                    Галерея
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="contacts.html" class="header__nav-link">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__icons">
+                        <ul class="header__icons-items">
+                            <li class="header__icons-item">
+                                <a href="favorites.html" class="header__icons-link">
+                                    <img src="img/header/heart.svg" alt="" class="header__icons-linkimage">
+                                    <span class="header__icon-num">
+                                        4
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="header__icons-item">
+                                <a href="cart.html" class="header__icons-link">
+                                    <img src="img/header/cart.svg" alt="" class="header__icons-linkimage">
+                                <span class="header__icon-num">
+                                    2
+                                </span>
+                                </a>
+                            </li>
+                            <li class="header__icons-item">
+                                <a href="regisrtation.html" class="header__icons-link">
+                                    <img src="img/header/account.svg" alt="" class="header__icons-linkimage">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="submit" class ="header__btn btn">
+                        Замовити
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class = "about-page">
+            <section class="about-page__basic basic">
+                <div class="basic__container">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__items-link">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item active">
+                            <span class="breadcrumbs__items-link">
+                                Про нас
+                            </span>
+                        </li>
+                    </ul>
+                    <h1 class="basic__title main-title">
+                        Кондитерская мастерская Комарист
+                    </h1>
+                    <div class="basic__slider-wrap swiper swiper-container" id = "swiper-container2">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide basic__slider">
+                                <img src="img/about/about1.jpg" alt="Тарт" class="swiper__photo">
+                                <div class="slider__text">
+                                    <h3 class="basic__title-small">
+                                        Наша історія
+                                    </h3>
+                                    <p class="basic__paragraph">
+                                        Наш шеф-кондитер Марія Комарист робить торти з 2008 року. Перший торт на замовлення виконала у 2009 році 3 квітня. У
+                                        2012 році 11 жовтня кондитерська майстерня «Комарист» переїхала та продовжила свій розвиток.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide basic__slider">
+                                <img src="img/about/about2.jpg" alt="Тарт" class="swiper__photo">
+                                <div class="slider__text">
+                                    <h3 class="basic__title-small">
+                                        Наша продукція
+                                    </h3>
+                                    <p class="basic__paragraph">
+                                        У кондитерській «Комарист» виготовляю торти з мастики, також є різніваріанти кремових тортів на кожен день .
+                                    </p>
+                                    <p class="basic__paragraph">
+                                        В Авторських тортах представлені дуже популярні торти в стилі Рустик, які можуть прикрасити Ваше весілля, а також
+                                        будь-який інший захід. Начинку торта підбираємо на ваш смак.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide basic__slider">
+                                <img src="img/about/about3.jpg" alt="Тарт" class="swiper__photo">
+                                <div class="slider__text">
+                                    <h3 class="basic__title-small">
+                                        Торти на замовлення
+                                    </h3>
+                                    <p class="basic__paragraph">
+                                        Оформлення (фото) торта на замовлення Ви можете подивитися в галереї та вибрати з тих, які вже робили наші кондитери, а
+                                        також Ви можете запропонувати свій варіант оформлення або фото того торта, який Вам сподобався. Під замовлення в
+                                        кондитерській майстерні роблять тематичні маффіни, кейк попси, пряники та багато інших солодощів.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pag "></div>
+                        <div class="swiper-scroll "></div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-page__basic-questions basic-questions">
+                <div class="basic-questions__container">
+                    <h3 class="basic__title-small">
+                        Поширені запитання
+                    </h3>
+                    <div class="basic__wrap">
+                        <h5 class="basic__wrap-text">
+                            До якого свята замовляють дитячі торти?
+                        </h5>
+                        <button type="submit" class="basic__wrap-arrow"></button>
+                    </div>
+                    <div class="basic__wrap-block">
+                        <p class="basic__wrap-block-text">
+                            Дитячі торти замовляють на дні народження дочок та синів, на хрестини діток, на рік, на 1 вересня, випускні в
+                            садках та
+                            школах і просто з нагоди, коли хочуть порадувати свою дитину.
+                        </p>
+                        <p class="basic__wrap-block-text">
+                            Також одним із головних свят є перший рік дитини. На це дитяче свято торт також прикрашається особливо і саме
+                            так, як
+                            хочете Ви. Будь-які уподобання - торт у вигляді цифри 1, просто з фігуркою одиниці, з вагою, зростанням, датою
+                            та часом
+                            народження дитини, з пінетками та фігурками малюку - все, що Ви захочете!
+                        </p>
+                    </div>
+                    <div class="basic__wrap">
+                        <h5 class="basic__wrap-text">
+                            Для кого ми робимо дитячі торти?
+                        </h5>
+                        <button type="submit" class="basic__wrap-arrow"></button>
+                    </div>
+                    <div class="basic__wrap-block">
+                        <p class="basic__wrap-block-text">
+                    
+                        </p>
+                        <p class="basic__wrap-block-text">
+                    
+                        </p>
+                    </div>
+                    <div class="basic__wrap">
+                        <h5 class="basic__wrap-text">
+                            У формі чого можуть бути торти?
+                        </h5>
+                        <button type="submit" class="basic__wrap-arrow"></button>
+                    </div>
+                    <div class="basic__wrap-block">
+                        <p class="basic__wrap-block-text">
+                    
+                        </p>
+                        <p class="basic__wrap-block-text">
+                    
+                        </p>
+                    </div>
+                    <div class="basic__wrap">
+                        <h5 class="basic__wrap-text">
+                            Скільки часу потрібно для виготовлення весільний торту?
+                        </h5>
+                        <button type="submit" class="basic__wrap-arrow"></button>
+                    </div>
+                    <div class="basic__wrap-block">
+                        <p class="basic__wrap-block-text">
+                    
+                        </p>
+                        <p class="basic__wrap-block-text">
+                    
+                        </p>
+                    </div>
+                    <div class="basic__wrap">
+                        <h5 class="basic__wrap-text">
+                            Мінімальна та максимальна вага торта
+                        </h5>
+                        <button type="submit" class="basic__wrap-arrow"></button>
+                    </div>
+                    <div class="basic__wrap-block">
+                        <p class="basic__wrap-block-text">
+                    
+                        </p>
+                        <p class="basic__wrap-block-text">
+                    
+                        </p>
+                    </div>
+                    <div class="basic__wrap">
+                        <h5 class="basic__wrap-text">
+                            Оформлення та прикраса
+                        </h5>
+                        <button type="submit" class="basic__wrap-arrow"></button>
+                    </div>
+                    <div class="basic__wrap-block">
+                        <p class="basic__wrap-block-text">
+                    
+                        </p>
+                        <p class="basic__wrap-block-text">
+                    
+                        </p>
+                    </div>
+                    <div class="basic__wrap">
+                        <h5 class="basic__wrap-text">
+                            Кенді-бар
+                        </h5>
+                        <button type="submit" class="basic__wrap-arrow"></button>
+                    </div>
+                    <div class="basic__wrap-block">
+                        <p class="basic__wrap-block-text">
+                    
+                        </p>
+                        <p class="basic__wrap-block-text">
+                    
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class = "footer">
+            <div class="footer__container">
+                <div class="footer__wrapper">
+                    <div class="footer__navigation">
+                        <h6 class="footer__title">
+                            Навігація
+                        </h6>
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-items">
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Про нас
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Галерея
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Контакти
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__timeline">
+                        <h6 class="footer__title">
+                            Графік роботи
+                        </h6>
+                        <p class="footer__text">
+                            Працюємо з 9:00 - 18:00 з пн. по пт.
+                        </p>
+                        <p class="footer__text">
+                            сб. та вс. - вихідні
+                        </p>
+                    </div>
+                    <div class="footer__logo">
+                        <img src="img/footer/logo.png" alt="Логотип" class="footer__logo-img">
+                    </div>
+                    <div class="footer__social">
+                        <h6 class="footer__title">
+                            Слідкуй за нами:
+                        </h6>
+                        <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="footer__social-item">
+                            <img src="img/footer/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" rel="nofollow noopener noreferrer" target="_blank" class="footer__social-item">
+                            <img src="img/footer/instagram.svg" alt="Instagramm">
+                        </a>
+                    </div>
+                    <div class="footer__contacts">
+                        <h6 class="footer__title">
+                            Контакти
+                        </h6>
+                        <div class="footer__contacts-item">
+                            <a href="tel:+380958794356" class = "footer__contacts-link">
+                                <img src="img/footer/phone.svg" alt="Номер телефона" class="footer__contacts-icon">+38 (095) 879 43 56
+                            </a>
+                        </div>
+                        <div class="footer__contacts-item">
+                            <a href="mailto:info@tort.pl.ua" class = "footer__contacts-link">
+                                <img src="img/footer/email.svg" alt="Электронная почта" class="footer__contacts-icon">info@tort.pl.ua
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>
